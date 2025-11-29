@@ -49,3 +49,15 @@ Set your Google Gemini API key as an environment variable, in ```learn.sh```
 ```bash
 export GEMINI_API_KEY="your_api_key_here"
 ```
+
+### Configuration
+
+Before running the learning agent, review config.py to ensure it matches your environment:
+
+   * TARGET: Path to the executable (default: ./fuzzgoat/fuzzgoat).
+
+   * DURATION_MINUTES: Duration of the learning phase (default: 1 minute).
+
+   * MODEL: The LLM model to use (default: gemini-2.5-flash-lite).
+
+   * DIRS: Output paths for seeds and mutators.
