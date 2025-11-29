@@ -42,3 +42,10 @@ Install the required Python packages for the LLM agent.
 pip install -r requirements.txt
 ```
 
+### 4. API Configuration
+
+Set your Google Gemini API key as an environment variable, in ```learn.sh```
+
+```bash
+export GEMINI_API_KEY="your_api_key_here"
+```
