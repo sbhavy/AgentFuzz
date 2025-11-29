@@ -1,5 +1,7 @@
 # AgentFuzz
 
+![alt text]([http://url/to/img.png](https://drive.google.com/file/d/1uLXueYXioSXE2FRblFgDbK21yapcm1cs/view?usp=sharing))
+
 **Dual-LLM Fuzzer for Fuzzgoat**
 
 AgentFuzz is a vulnerability research tool that leverages Large Language Models (LLMs) to automatically generate seed inputs and custom Python mutators for fuzzing. It operates in two phases: a "Learning Phase" to discover effective crash-inducing strategies, and a "Fuzzing Phase" using AFL++ with the consolidated knowledge.
