@@ -1,6 +1,6 @@
 # AgentFuzz
 
-![alt text]([http://url/to/img.png](https://drive.google.com/file/d/1uLXueYXioSXE2FRblFgDbK21yapcm1cs/view?usp=sharing))
+![alt text](https://github.com/sbhavy/AgentFuzz/blob/main/agentfuzz.png)
 
 **Dual-LLM Fuzzer for Fuzzgoat**
 
