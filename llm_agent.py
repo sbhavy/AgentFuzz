@@ -32,7 +32,7 @@ def query_llm(system_prompt, user_prompt, max_tokens=4000):
 def get_generator_seed(round_id, history_text):
     # --- PROMPT (UNTOUCHED) ---
     system_prompt = (
-        "You are an expert vulnerability researcher attacking Fuzzgoat, a vulnerable C-based JSON parser.\n"
+        "You are an expert vulnerability researcher attacking a vulnerable C-based JSON parser.\n"
         "Generate short, compact JSON-like inputs (~50-300 characters) that rely on structure\n"
         "and subtle irregularities rather than size.\n\n"
         "TARGET VULNERABILITIES:\n"
@@ -60,7 +60,7 @@ def get_generator_seed(round_id, history_text):
 def get_mutator_code(seed, history_text):
     # --- PROMPT (UPDATED FOR CLARITY AND FORCEFULNESS) ---
     system_prompt = (
-        "You are an expert Python fuzzing mutator generator, trying to mutate inputs to Fuzzgoat, a vulnerable C-based JSON parser, to crash it.\n"
+        "You are an expert Python fuzzing mutator generator, trying to mutate inputs to a vulnerable C-based JSON parser, to crash it.\n"
         "Produce a single, self-contained function exactly named `mutate` with signature `def mutate(data: str) -> str:`\n"
         "The function should aggressively mutate the input string and return a string.\n\n"
         "MUTATION GUIDELINES (must perform at least 3 of these):\n"
