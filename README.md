@@ -61,3 +61,50 @@ Before running the learning agent, review config.py to ensure it matches your en
    * MODEL: The LLM model to use (default: gemini-2.5-flash-lite).
 
    * DIRS: Output paths for seeds and mutators.
+
+
+### Usage Workflow
+
+#### Step 1: Learning Phase
+
+Run the learning script. This launches the LLM agent to generate initial seeds and Python mutators, validating them against the target.
+
+```bash
+# Generates seeds and mutators in the 'llm-fuzz' directory
+python3 learn.py
+```
+
+#### Step 2: Consolidate Mutators
+
+Once the learning phase is complete, aggregate the successful mutators into a single corpus file (llm_corpus.py) that AFL++ can utilize.
+
+```bash
+python3 consolidate.py
+```
+
+
+#### Step 3: Run AFL++ Fuzzing
+
+Execute the setup script to configure the system (CPU settings, core patterns) and launch the AFL++ fuzzer using the generated assets.
+
+Note: You may need to update the PYTHONPATH in setup-commands.sh to match your local directory structure before running.
+
+```bash
+# Make the script executable
+chmod +x setup-commands.sh
+
+# Run the system configuration and fuzzer (requires sudo for system settings)
+./setup-commands.sh
+```
+
+### Directory Structure
+
+ *   learn.py: Main driver for the LLM learning loop.
+
+  *  consolidate.py: Combines discovered mutators into a single Python module.
+
+   * llm_corpus.py: The generated corpus of mutators used by the AFL++ bridge.
+
+   * afl_python_mutator.py: The Python bridge connecting AFL++ to the LLM corpus.
+
+   * setup-commands.sh: Automates system config and starts the fuzzing session.
