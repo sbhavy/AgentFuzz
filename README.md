@@ -108,3 +108,7 @@ chmod +x setup-commands.sh
    * afl_python_mutator.py: The Python bridge connecting AFL++ to the LLM corpus.
 
    * setup-commands.sh: Automates system config and starts the fuzzing session.
+
+## NOTE
+
+As is the case with most software, even software fuzzers themselves can have bugs! So, if you do end up finding something funny, feel free to ping me.
