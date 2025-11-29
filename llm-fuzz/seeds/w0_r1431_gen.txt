@@ -1,0 +1,1 @@
+{"key1": [{}, {"nested_key": null, "another_key": "value"}], "key2": {"invalid_char": "\x00"}}

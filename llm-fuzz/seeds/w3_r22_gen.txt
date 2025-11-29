@@ -1,0 +1,1 @@
+{"key": [{}, 1, [], {}, {"a": null, "b": [false, true]}], "next": {"prev": null}}

@@ -1,0 +1,1 @@
+{"a":{"b":[1,2,\u0000,4],"c":true,"d":false},"e":null,"f":"invalid\\unicode"}

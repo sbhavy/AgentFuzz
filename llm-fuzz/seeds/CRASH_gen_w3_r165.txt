@@ -1,0 +1,25 @@
+{
+"name": "test",
+"data": [
+  {
+    "key1": "value1",
+    "key2": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "key3": {
+      "nested1": "val",
+      "nested2": [
+        null
+      ]
+    }
+  }
+],
+"flag": true,
+"empty_obj": {},
+"null_val": null,
+"num_val": 123.45
+}

@@ -1,0 +1,1 @@
+{"key": [1, 2, 3,,,,], "nested": {"key2": "value2", "another_array": [,,,,,,1,]} , "empty_obj": {}, "invalid_char": "\x00", "escaped_quote": "\"a\""}

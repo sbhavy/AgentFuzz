@@ -1,0 +1,1 @@
+{"a": [1.2e3.4, "hello\u0000world"], "b": {"c": [{}, {}], "d": true}, "e": null, "f": false, "g": [ "\t" ]}
